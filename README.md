@@ -17,7 +17,7 @@
 
 
 - Download the mysql connector jar.
-    [Click here to download mysql connector jar](https://mvnrepository.com/artifact/com.mysql/mysql-connector-j/8.1.0)
+    - [Click here to download mysql connector jar](https://mvnrepository.com/artifact/com.mysql/mysql-connector-j/8.1.0)
 
 - Steps to add mysql jar connector to your project.
 1. Right click on project and click on 'build path'.
@@ -31,5 +31,5 @@
     - Add the dummy data from `MYSQL_Commands` folder
         - Enter below command 
             ```sql
-            source `<Current_Directory>/MYSQL_Commands/comands.sql`
+            source `<Current_Directory>/MYSQL_Commands/commands.sql`
             ```
