@@ -16,7 +16,7 @@
 7. Right click on the project and select 'Run as..', select 'java applicaion'.
 
 
-- Download the mysql connector jar
+- Download the mysql connector jar.
     [Click here to download mysql connector jar](https://mvnrepository.com/artifact/com.mysql/mysql-connector-j/8.1.0)
 
 - Steps to add mysql jar connector to your project.
