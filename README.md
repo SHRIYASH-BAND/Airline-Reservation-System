@@ -2,9 +2,9 @@
 ## Airline Reservation System
 
 - Git clone the repo using command 
-```shell
-git clone https://github.com/SHRIYASH-BAND/Airline-Reservation-System.git
-```
+    ```shell
+    git clone https://github.com/SHRIYASH-BAND/Airline-Reservation-System.git
+    ```
 
 - Steps to Run Eclipse Project.
 1. Create a eclipse workspace and open it.
@@ -16,11 +16,20 @@ git clone https://github.com/SHRIYASH-BAND/Airline-Reservation-System.git
 7. Right click on the project and select 'Run as..', select 'java applicaion'.
 
 
-- Download the mysql connector jar.
-
-[Click here to download mysql connector jar](https://mvnrepository.com/artifact/com.mysql/mysql-connector-j/8.1.0)
+- Download the mysql connector jar
+    [Click here to download mysql connector jar](https://mvnrepository.com/artifact/com.mysql/mysql-connector-j/8.1.0)
 
 - Steps to add mysql jar connector to your project.
 1. Right click on project and click on 'build path'.
 2. under build path choose 'Add external jar archieves'.
 3. choose the `mysql-connector-j-8.1.0.jar`
+
+- Configurations
+    - Update the `DBUtil.java` file 
+        - Update DB_USER = `your mysql username`
+        - Update DB_PASSWD = `your mysql password`
+    - Add the dummy data from `MYSQL_Commands` folder
+        - Enter below command 
+            ```sql
+            source `<Current_Directory>/MYSQL_Commands/comands.sql`
+            ```
