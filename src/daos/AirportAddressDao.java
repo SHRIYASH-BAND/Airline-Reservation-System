@@ -50,4 +50,16 @@ public class AirportAddressDao extends Dao {
 		
 	}
 
+	public int register(AirportAddress airportAddress) throws Exception {
+		String sql = "INSERT INTO airport_address VALUES(default, ?, ?, ?, ?)";
+		try(PreparedStatement stmt = con.prepareStatement(sql)) {
+			stmt.setString(1, airportAddress.getState());
+			stmt.setString(2, airportAddress.getCity());
+			stmt.setInt(3, airportAddress.getPincode());
+			stmt.setString(4, airportAddress.getLocality());
+			
+			int count = stmt.executeUpdate();
+			return count;
+		}
+	}
 }

@@ -127,7 +127,7 @@ public class CustomerService implements AutoCloseable {
 			
 			Airport destinationAirport = airportDao.findByAddress(destinationAirportAddress);
 			
-			schedules = flightScheduleDao.listScheduledFlightsByAddress(sourceAirport,destinationAirport);
+			schedules = flightScheduleDao.listScheduledFlightsByAirport(sourceAirport,destinationAirport);
 			
 		} catch (Exception e) {
 			e.printStackTrace();
