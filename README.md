@@ -1,10 +1,39 @@
 # Java Mini-Project
 ## Airline Reservation System
-
+       
 - Git clone the repo using command 
     ```shell
     git clone https://github.com/SHRIYASH-BAND/Airline-Reservation-System.git
     ```
+
+- Entities 
+    - Customer
+    - Flight
+    - Flight_Schedule
+    - Airport
+    - Airport_Address
+    - Reservations
+
+- Functionalities
+    - Customer
+        - Register
+        - Login
+        - View Flight Schedules 
+        - View Booked Tickets
+        - Book Flight Reservations
+    - Airport
+        - Register
+        - Login
+        - View Airport Flight Schedules
+        - Schedule Flights
+
+
+![ERD Diagram](./docs/Airline-Reservation-System.jpg)
+
+
+- Presentation Link
+    - [Click here to view presentation](https://docs.google.com/presentation/d/12clAlIiBWTtY32Bok4HfCwklBddiYouGhWTswgdCyg0/edit?usp=sharing)
+
 
 - Steps to Run Eclipse Project.
 1. Create a eclipse workspace and open it.
