@@ -110,8 +110,6 @@ public class Customer {
 	}
 
 
-
-
 	@Override
 	public int hashCode() {
 		return Objects.hash(customer_id, email);

@@ -13,6 +13,7 @@ public class CustomerDao extends Dao {
 	
 	public int save(Customer c) throws Exception {
 		String sql = "INSERT INTO customer VALUES(default, ?, ?, ?, ?, ?, ?, ?)";
+		// ? named/ optional prameters; IN OUT INOUT DBMS
 		try(PreparedStatement stmt = con.prepareStatement(sql)) {
 			stmt.setString(1, c.getName());
 			stmt.setString(2, c.getEmail());

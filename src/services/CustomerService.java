@@ -66,7 +66,8 @@ public class CustomerService implements AutoCloseable {
 			int count = customerDao.save(customer);
 			System.out.println("User registered: " + count);
 		
-		} catch (Exception e) {
+		}//customerDao.close();
+		catch (Exception e) {
 			e.printStackTrace();
 		}		
 	}
@@ -85,6 +86,9 @@ public class CustomerService implements AutoCloseable {
 			if(customer != null && password.equals(customer.getPassword())) {
 				System.out.println("User Logged in.....");
 				return customer;
+			}
+			else {
+				System.out.println("Invalid credentials");
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
