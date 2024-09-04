@@ -3,8 +3,12 @@
 *.war
 *.ear
 *.class
+*.classpath
+*.project
 
 # eclipse specific git ignore
 .metadata
 bin/**
 .bin/
+settings/**
+.settings/
